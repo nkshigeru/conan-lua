@@ -11,8 +11,6 @@ class LuaConan(ConanFile):
     description = "<Description of Lua here>"
     topics = ("<Put some tag here>", "<here>", "<and here>")
     settings = "os", "compiler", "build_type", "arch"
-    options = {"shared": [True, False]}
-    default_options = "shared=False"
     generators = "cmake"
     source_subfolder = "lua-{version}".format(version=version)
 
